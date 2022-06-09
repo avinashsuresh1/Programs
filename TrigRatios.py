@@ -3,8 +3,6 @@ import math
 
 x = float(input("Enter angle in degrees: "))
 
-csign=1
-
 if(x>=360):
     xshort = x%360
 else:
@@ -26,9 +24,9 @@ else:
     cos=round(math.sqrt(1-sum**2),12)
 
 if(xshort>90 and xshort<=270):
-    csign=-1
+    cos*=-1
 
-cos*=csign
+
 
 if(sin==0):
     cot="undefined"
